@@ -26,7 +26,7 @@ if (burger && menu) {
   });
 
   // При переходе на десктопную ширину закрываем меню
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+  window.matchMedia('(min-width: 960px)').addEventListener('change', e => {
     if (e.matches) setOpen(false);
   });
 }
