@@ -84,8 +84,8 @@ def cmd_protocol(rows):
 
 def cmd_ab(rows):
     groups = {v: [r for r in rows if r["variant"].upper() == v] for v in ("A", "B")}
-    for metric in ("cta_clicks", "time_to_cta_s", "max_scroll_pct", "sus"):
-        vals = {v: [float(r[metric]) for r in rs if r[metric] != ""] for v, rs in groups.items()}
+    for metric in ("cta_clicks", "time_to_cta_s", "max_scroll_pct", "rage_clicks", "ease_1_5", "sus"):
+        vals = {v: [float(r[metric]) for r in rs if r.get(metric, "") != ""] for v, rs in groups.items()}
         if min(len(vals["A"]), len(vals["B"])) < 2:
             print(f"{metric}: недостаточно данных")
             continue

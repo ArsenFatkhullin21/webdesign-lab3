@@ -1,0 +1,426 @@
+{
+  "psi": [
+    {
+      "stage": "before",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab2/",
+      "formFactor": "mobile",
+      "performance": 93,
+      "fcp": "1,5 сек.",
+      "lcp": "3,2 сек.",
+      "tbt": "0 мс",
+      "cls": "0",
+      "si": "2,6 сек.",
+      "field": "нет полевых данных CrUX"
+    },
+    {
+      "stage": "before",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab2/",
+      "formFactor": "desktop",
+      "performance": 100,
+      "fcp": "0,4 сек.",
+      "lcp": "0,8 сек.",
+      "tbt": "0 мс",
+      "cls": "0",
+      "si": "0,5 сек.",
+      "field": "нет полевых данных CrUX"
+    },
+    {
+      "stage": "after",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab3/",
+      "formFactor": "mobile",
+      "performance": 100,
+      "fcp": "0,8 сек.",
+      "lcp": "0,8 сек.",
+      "tbt": "0 мс",
+      "cls": "0",
+      "si": "2,3 сек.",
+      "field": "нет полевых данных CrUX"
+    },
+    {
+      "stage": "after",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab3/",
+      "formFactor": "desktop",
+      "performance": 100,
+      "fcp": "0,2 сек.",
+      "lcp": "0,2 сек.",
+      "tbt": "0 мс",
+      "cls": "0.001",
+      "si": "0,3 сек.",
+      "field": "нет полевых данных CrUX"
+    }
+  ],
+  "lighthouse": [
+    {
+      "stage": "before",
+      "page": "index",
+      "device": "mobile",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab2/index.html",
+      "performance": 86,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "2.5 s",
+      "lcp": "3.6 s",
+      "cls": "0.001",
+      "tbt": "0 ms",
+      "si": "3.1 s",
+      "lcpMs": 3573,
+      "clsNum": 0.000740773793556062
+    },
+    {
+      "stage": "after",
+      "page": "index",
+      "device": "mobile",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab3/index.html",
+      "performance": 98,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "1.6 s",
+      "lcp": "1.6 s",
+      "cls": "0.057",
+      "tbt": "70 ms",
+      "si": "1.9 s",
+      "lcpMs": 1645,
+      "clsNum": 0.05692276003937339
+    },
+    {
+      "stage": "before",
+      "page": "index",
+      "device": "desktop",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab2/index.html",
+      "performance": 91,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "1.2 s",
+      "lcp": "1.6 s",
+      "cls": "0.001",
+      "tbt": "0 ms",
+      "si": "1.3 s",
+      "lcpMs": 1582,
+      "clsNum": 0.000752577611120214
+    },
+    {
+      "stage": "after",
+      "page": "index",
+      "device": "desktop",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab3/index.html",
+      "performance": 98,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "0.9 s",
+      "lcp": "0.9 s",
+      "cls": "0",
+      "tbt": "0 ms",
+      "si": "0.9 s",
+      "lcpMs": 935,
+      "clsNum": 9.340174903889861e-05
+    },
+    {
+      "stage": "before",
+      "page": "courses",
+      "device": "mobile",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab2/courses.html",
+      "performance": 90,
+      "accessibility": 98,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "2.2 s",
+      "lcp": "3.3 s",
+      "cls": "0",
+      "tbt": "0 ms",
+      "si": "2.3 s",
+      "lcpMs": 3287,
+      "clsNum": 0.0002886839048417007
+    },
+    {
+      "stage": "after",
+      "page": "courses",
+      "device": "mobile",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab3/courses.html",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "1.6 s",
+      "lcp": "1.8 s",
+      "cls": "0",
+      "tbt": "40 ms",
+      "si": "1.7 s",
+      "lcpMs": 1833,
+      "clsNum": 1.533006138173778e-05
+    },
+    {
+      "stage": "before",
+      "page": "courses",
+      "device": "desktop",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab2/courses.html",
+      "performance": 90,
+      "accessibility": 98,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "1.2 s",
+      "lcp": "1.7 s",
+      "cls": "0",
+      "tbt": "0 ms",
+      "si": "1.2 s",
+      "lcpMs": 1668,
+      "clsNum": 0.0002858345659546413
+    },
+    {
+      "stage": "after",
+      "page": "courses",
+      "device": "desktop",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab3/courses.html",
+      "performance": 96,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "1.0 s",
+      "lcp": "1.2 s",
+      "cls": "0",
+      "tbt": "0 ms",
+      "si": "1.0 s",
+      "lcpMs": 1238,
+      "clsNum": 2.442559996275275e-06
+    },
+    {
+      "stage": "before",
+      "page": "contacts",
+      "device": "mobile",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab2/contacts.html",
+      "performance": 96,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "2.2 s",
+      "lcp": "2.2 s",
+      "cls": "0.002",
+      "tbt": "0 ms",
+      "si": "2.4 s",
+      "lcpMs": 2247,
+      "clsNum": 0.0017077358700516498
+    },
+    {
+      "stage": "after",
+      "page": "contacts",
+      "device": "mobile",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab3/contacts.html",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "1.0 s",
+      "lcp": "1.0 s",
+      "cls": "0",
+      "tbt": "10 ms",
+      "si": "1.3 s",
+      "lcpMs": 959,
+      "clsNum": 0.0004008821801718105
+    },
+    {
+      "stage": "before",
+      "page": "contacts",
+      "device": "desktop",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab2/contacts.html",
+      "performance": 94,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "1.2 s",
+      "lcp": "1.2 s",
+      "cls": "0.001",
+      "tbt": "0 ms",
+      "si": "1.2 s",
+      "lcpMs": 1200,
+      "clsNum": 0.0008208563256006492
+    },
+    {
+      "stage": "after",
+      "page": "contacts",
+      "device": "desktop",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab3/contacts.html",
+      "performance": 97,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": "1.0 s",
+      "lcp": "1.0 s",
+      "cls": "0",
+      "tbt": "0 ms",
+      "si": "1.0 s",
+      "lcpMs": 958,
+      "clsNum": 0.0001857581203032428
+    }
+  ],
+  "failedBefore": [
+    {
+      "id": "first-contentful-paint",
+      "title": "First Contentful Paint",
+      "score": 0.66,
+      "value": "2.5 s"
+    },
+    {
+      "id": "largest-contentful-paint",
+      "title": "Largest Contentful Paint",
+      "score": 0.62,
+      "value": "3.6 s"
+    },
+    {
+      "id": "cache-insight",
+      "title": "Use efficient cache lifetimes",
+      "score": 0.5,
+      "value": "Est savings of 13 KiB"
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "value": ""
+    },
+    {
+      "id": "render-blocking-insight",
+      "title": "Render-blocking requests",
+      "score": 0,
+      "value": "Est savings of 540 ms"
+    }
+  ],
+  "waterfall": {
+    "before": {
+      "requests": 21,
+      "totalKB": 208,
+      "loadMs": 4735,
+      "fcpMs": 3045,
+      "lcpMs": 3865,
+      "heaviest": [
+        {
+          "url": "fonts.gstatic.com UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
+          "type": "Font",
+          "kb": 83.4
+        },
+        {
+          "url": "fonts.gstatic.com UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+          "type": "Font",
+          "kb": 47.4
+        },
+        {
+          "url": "fonts.gstatic.com xn7gYHE41ni1AdIRggexSvfedN4.woff2",
+          "type": "Font",
+          "kb": 24
+        },
+        {
+          "url": "fonts.gstatic.com UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2",
+          "type": "Font",
+          "kb": 18.8
+        },
+        {
+          "url": "fonts.gstatic.com xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2",
+          "type": "Font",
+          "kb": 14.1
+        }
+      ],
+      "runs": [
+        {
+          "i": 1,
+          "lcp": 3374,
+          "fcp": 2557,
+          "load": 4232
+        },
+        {
+          "i": 2,
+          "lcp": 4395,
+          "fcp": 3593,
+          "load": 5479
+        },
+        {
+          "i": 3,
+          "lcp": 3865,
+          "fcp": 3045,
+          "load": 4735
+        }
+      ],
+      "median": 3,
+      "longTask": {
+        "start": 2016,
+        "duration": 1075
+      },
+      "styleLayout": 1254
+    },
+    "after": {
+      "requests": 18,
+      "totalKB": 207,
+      "loadMs": 3110,
+      "fcpMs": 3032,
+      "lcpMs": 3032,
+      "heaviest": [
+        {
+          "url": "fonts.gstatic.com UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
+          "type": "Font",
+          "kb": 83.4
+        },
+        {
+          "url": "fonts.gstatic.com UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+          "type": "Font",
+          "kb": 47.8
+        },
+        {
+          "url": "fonts.gstatic.com xn7gYHE41ni1AdIRggexSvfedN4.woff2",
+          "type": "Font",
+          "kb": 24
+        },
+        {
+          "url": "fonts.gstatic.com UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2",
+          "type": "Font",
+          "kb": 18.4
+        },
+        {
+          "url": "fonts.gstatic.com xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2",
+          "type": "Font",
+          "kb": 14.1
+        }
+      ],
+      "runs": [
+        {
+          "i": 1,
+          "lcp": 3850,
+          "fcp": 3850,
+          "load": 3824
+        },
+        {
+          "i": 2,
+          "lcp": 3032,
+          "fcp": 3032,
+          "load": 3110
+        },
+        {
+          "i": 3,
+          "lcp": 2605,
+          "fcp": 2605,
+          "load": 2671
+        }
+      ],
+      "median": 2,
+      "longTask": {
+        "start": 1835,
+        "duration": 1119
+      },
+      "styleLayout": 1543
+    }
+  },
+  "psiIter1": [
+    {
+      "stage": "iter1",
+      "url": "https://arsenfatkhullin21.github.io/webdesign-lab3/",
+      "formFactor": "mobile",
+      "performance": 93,
+      "fcp": "0,8 сек.",
+      "lcp": "3,2 сек.",
+      "tbt": "0 мс",
+      "cls": "0",
+      "si": "2,7 сек.",
+      "field": "нет полевых данных CrUX"
+    }
+  ]
+}
