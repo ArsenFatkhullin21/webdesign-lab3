@@ -1,0 +1,36 @@
+# Публикация A/B-вариантов на GitHub Pages:
+#   https://<user>.github.io/<repo>/    — вариант A (контроль)
+#   https://<user>.github.io/<repo>/b/  — вариант B
+# ID проекта Microsoft Clarity берётся из переменной репозитория CLARITY_ID
+# (Settings → Secrets and variables → Actions → Variables). Пусто — сайт без счётчика.
+name: Deploy A/B
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: python3 tools/make_dist.py
+        env:
+          CLARITY_ID: ${{ vars.CLARITY_ID }}
+      - run: |
+          mkdir _site
+          cp -R dist/a/. _site/
+          cp -R dist/b _site/b
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: _site }
+      - id: deployment
+        uses: actions/deploy-pages@v4

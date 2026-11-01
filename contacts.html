@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — CodeLab</title>
+  <meta name="description" content="Свяжитесь с CodeLab: форма обратной связи, адрес, телефон и email.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <script>
+    /* Ранняя установка темы — без «вспышки» при загрузке */
+    (function () {
+      var s = localStorage.getItem('theme');
+      var t = (s === 'dark' || s === 'light') ? s : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/bundle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap"></noscript>
+</head>
+<body>
+<div class="progress" role="presentation"></div>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html" aria-label="CodeLab — на главную"><img src="img/logo.svg" alt="" width="32" height="32">CodeLab</a>
+    <nav class="nav" aria-label="Основная навигация"><a class="nav__link" href="index.html">Главная</a><a class="nav__link" href="courses.html">Курсы</a><a class="nav__link" href="teachers.html">Преподаватели</a><a class="nav__link" href="blog.html">Блог</a><a class="nav__link nav__link--active" href="contacts.html" aria-current="page">Контакты</a></nav>
+    <div class="header__actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Переключить тему" aria-pressed="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="theme-toggle__icon theme-toggle__icon--sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="theme-toggle__icon theme-toggle__icon--moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a class="btn btn--primary btn--sm header__login" href="contacts.html#enroll">Войти</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню"><span class="burger__lines"></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация"><a class="mobile-menu__link" href="index.html">Главная</a><a class="mobile-menu__link" href="courses.html">Курсы</a><a class="mobile-menu__link" href="teachers.html">Преподаватели</a><a class="mobile-menu__link" href="blog.html">Блог</a><a class="mobile-menu__link mobile-menu__link--active" href="contacts.html" aria-current="page">Контакты</a>
+  <a class="btn btn--primary btn--lg" href="contacts.html#enroll">Войти</a>
+</nav>
+<main id="main">
+<section class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="Хлебные крошки"><ol><li><a href="index.html">Главная</a></li><li><span aria-current="page">Контакты</span></li></ol></nav><h1>Контакты</h1><p>Напишите нам — ответим в течение рабочего дня.</p></div></section><div class="container page-body"><div class="contacts-grid">
+<section class="panel" id="enroll" aria-labelledby="form-title"><h2 id="form-title" style="font-size:var(--fs-2xl)">Оставить заявку</h2>
+<form data-demo-form>
+  <div class="field"><label class="label" for="name">Имя</label><input class="input" id="name" name="name" placeholder="Ваше имя" required autocomplete="name"></div>
+  <div class="field"><label class="label" for="email">Email</label><input class="input" id="email" type="email" name="email" placeholder="you@example.com" required autocomplete="email"></div>
+  <div class="field"><label class="label" for="topic">Тема</label><select class="select" id="topic" name="topic"><option>Выбор курса</option><option>Оплата и рассрочка</option><option>Сотрудничество</option></select></div>
+  <div class="field"><label class="label" for="msg">Сообщение</label><textarea class="textarea" id="msg" name="msg" placeholder="Чем мы можем помочь?" required></textarea></div>
+  <label class="checkbox field"><input type="checkbox" required><span>Согласен на обработку персональных данных</span></label>
+  <button class="btn btn--primary" type="submit">Отправить</button>
+  <p class="form-status form-status--ok" role="status"></p>
+</form></section>
+<section aria-labelledby="info-title"><h2 id="info-title" style="font-size:var(--fs-2xl)">Как нас найти</h2>
+<ul class="contact-list">
+  <li><strong>Адрес</strong>Москва, ул. Программистов, 42, офис 7</li>
+  <li><strong>Телефон</strong><a href="tel:+78005550142">8 (800) 555-01-42</a></li>
+  <li><strong>Email</strong><a href="mailto:hello@codelab.example">hello@codelab.example</a></li>
+  <li><strong>Часы работы</strong>Пн–Пт, 10:00–19:00</li></ul>
+<img class="map" src="img/photos/map.svg" alt="Схема проезда к офису CodeLab" width="800" height="450" loading="lazy"></section>
+</div></div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="32" height="32">CodeLab</a>
+        <p class="form-note" style="margin-top:12px;max-width:320px">Онлайн-школа программирования: практика, наставники и помощь с трудоустройством.</p>
+        <div class="socials">
+          <a href="https://t.me/" aria-label="Telegram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></a>
+          <a href="https://github.com/" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="https://youtube.com/" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="m9.75 15.02 5.75-3.27-5.75-3.27z"/></svg></a>
+        </div>
+      </div>
+      <div><h2 class="footer__title">Обучение</h2><ul class="footer__list">
+        <li><a href="courses.html">Все курсы</a></li><li><a href="course.html">Frontend-разработчик</a></li><li><a href="teachers.html">Преподаватели</a></li></ul></div>
+      <div><h2 class="footer__title">Ресурсы</h2><ul class="footer__list">
+        <li><a href="blog.html">Блог</a></li><li><a href="post.html">Как начать в IT</a></li></ul></div>
+      <div><h2 class="footer__title">Контакты</h2><ul class="footer__list">
+        <li><a href="contacts.html">Написать нам</a></li><li><a href="mailto:hello@codelab.example">hello@codelab.example</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p>© 2026 CodeLab. Учебный проект, лабораторная работа №2.</p><p>Сделано с CSS Grid и любовью к доступности</p></div>
+  </div>
+</footer>
+<script src="js/theme.js" defer></script>
+<script src="js/menu.js" defer></script>
+<script src="js/scroll.js" defer></script>
+<script src="js/ab.js" defer data-variant="a"></script>
+</body>
+</html>

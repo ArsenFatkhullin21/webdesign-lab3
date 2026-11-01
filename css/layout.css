@@ -1,0 +1,65 @@
+/* layout.css — контейнер, сетки, секции */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.section { padding-block: var(--space-16); }
+@media (min-width: 1024px) { .section { padding-block: var(--space-24); } }
+.section--alt { background: var(--color-surface-alt); }
+.section__head { max-width: 640px; margin-bottom: var(--space-12); }
+.section__head p { color: var(--color-text-muted); font-size: var(--fs-lg); }
+
+/* Адаптивные сетки: 1 → 2 (768) → 3 (1024) колонки */
+.grid { display: grid; gap: var(--space-6); grid-template-columns: 1fr; }
+@media (min-width: 768px) {
+  .grid--2, .grid--3, .grid--4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .grid--4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Двухколоночный макет с сайдбаром */
+.with-sidebar { display: grid; gap: var(--space-8); grid-template-columns: 1fr; }
+@media (min-width: 1024px) {
+  .with-sidebar { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); align-items: start; }
+}
+
+main { display: block; min-height: 60vh; }
+
+/* Footer */
+.footer {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding-block: var(--space-12) var(--space-6);
+  transition: background-color var(--transition-base);
+}
+.footer__grid { display: grid; gap: var(--space-8); grid-template-columns: 1fr 1fr; }
+.footer__brand { grid-column: 1 / -1; }
+@media (min-width: 768px) {
+  .footer__grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+  .footer__brand { grid-column: auto; }
+}
+.footer__title {
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+.footer__list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-2); }
+.footer__list a { color: var(--color-text); text-decoration: none; }
+.footer__list a:hover { color: var(--color-primary); text-decoration: underline; }
+.footer__bottom {
+  margin-top: var(--space-12);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+  display: flex; flex-wrap: wrap; gap: var(--space-4);
+  justify-content: space-between;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+.footer__bottom p { margin: 0; }

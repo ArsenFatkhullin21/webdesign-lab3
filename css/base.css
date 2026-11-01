@@ -1,0 +1,103 @@
+/* base.css — reset, типографика, глобальные правила */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px; /* высота sticky-шапки для якорей */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  color: var(--color-text);
+  background: var(--color-bg);
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+img, svg { max-width: 100%; height: auto; display: block; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  margin: 0 0 var(--space-4);
+}
+h1 { font-size: var(--fs-4xl); font-weight: var(--fw-black); }
+h2 { font-size: var(--fs-3xl); }
+h3 { font-size: var(--fs-xl); line-height: var(--lh-snug); }
+@media (min-width: 768px) {
+  h1 { font-size: var(--fs-5xl); }
+  h2 { font-size: var(--fs-4xl); }
+}
+@media (min-width: 1024px) {
+  h1 { font-size: var(--fs-6xl); }
+}
+
+p { margin: 0 0 var(--space-4); }
+
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+a:hover { color: var(--color-primary-hover); }
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+ul, ol { margin: 0 0 var(--space-4); padding-left: var(--space-6); }
+
+code { font-family: var(--font-mono); font-size: .9em; }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--space-4);
+  top: -100px;
+  z-index: 300;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-btn);
+  color: var(--color-on-btn);
+  border-radius: var(--radius-md);
+  transition: top var(--transition-fast);
+}
+.skip-link:focus { top: var(--space-2); color: var(--color-on-btn); }
+
+/* Анимации при скролле */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 600ms ease, transform 600ms ease;
+  transition-delay: var(--animate-delay, 0ms);
+}
+[data-animate].is-visible { opacity: 1; transform: none; }
+[data-animate="fade"] { transform: none; }
+[data-animate="left"] { transform: translateX(-32px); }
+[data-animate="right"] { transform: translateX(32px); }
+[data-animate="left"].is-visible,
+[data-animate="right"].is-visible { transform: none; }
+
+/* Уважение к настройкам пользователя */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  [data-animate] { opacity: 1; transform: none; }
+}
