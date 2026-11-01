@@ -44,16 +44,17 @@
 </nav>
 <main id="main">
 
+<!-- Первый экран без анимации появления: иначе LCP (h1) ждёт JS и transition -->
 <section class="hero"><div class="container hero__grid">
   <div>
-    <p class="hero__eyebrow" data-animate="fade">Онлайн-школа IT-профессий</p>
-    <h1 data-animate>Научись программировать и найди работу мечты</h1>
-    <p class="hero__lead" data-animate style="--animate-delay:100ms">Практические курсы с наставниками, реальными проектами и поддержкой на пути к первому офферу.</p>
-    <div class="hero__actions" data-animate style="--animate-delay:200ms">
+    <p class="hero__eyebrow">Онлайн-школа IT-профессий</p>
+    <h1>Научись программировать и найди работу мечты</h1>
+    <p class="hero__lead">Практические курсы с наставниками, реальными проектами и поддержкой на пути к первому офферу.</p>
+    <div class="hero__actions">
       <a class="btn btn--primary btn--lg" href="courses.html" data-cta="hero">Выбрать курс</a>
       <a class="btn btn--secondary btn--lg" href="contacts.html">Бесплатная консультация</a>
     </div>
-    <dl class="hero__stats" data-animate style="--animate-delay:300ms">
+    <dl class="hero__stats">
       <div><dt>5 000+</dt><dd>выпускников</dd></div><div><dt>87%</dt><dd>находят работу</dd></div><div><dt>4.9</dt><dd>средняя оценка</dd></div>
     </dl>
   </div>
